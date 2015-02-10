@@ -6,21 +6,21 @@ import java.util.Arrays;
 public class bublleMin {
     public static void main(String[] args) {
 //перестановка массива от большего к меньшему
-      //  int data[] = {10, 20, 30, 40, 50,60,70,80,90,100};
-        //for (int index = data.length/2-1; index >=0; index--) {
-         // swep(data, index, data.length - 1 - index);
-           // System.out.print(index);
-           // System.out.println();
-        //}
+        int data[] = {10, 20, 30, 40, 50};
+        for (int index = data.length/2; index >=0; index--) {
+          swep(data, index, data.length - 1 - index);
+            System.out.print(index);
+            System.out.println();
+        }
 
 //перестановка массива от меньшего к большему
 
-        int data[] = {10, 20, 30, 40, 50,60,70,80,90,100};
-        for (int index = 0; index < data.length / 2; index++) {
-            swep(data, index, data.length - 1 - index);
-            System.out.print(index);
-             System.out.println();
-        }
+      //  int data[] = {10, 20, 30, 40, 50,60,70,80,90,100};
+        //for (int index = 0; index < data.length / 2; index++) {
+          //  swep(data, index, data.length - 1 - index);
+            //System.out.print(index);
+             //System.out.println();
+      //  }
         System.out.println(Arrays.toString(data));
     }
 
